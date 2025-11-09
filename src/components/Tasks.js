@@ -12,7 +12,7 @@ export default function Tasks() {
   });
 
   const role = localStorage.getItem("role") || "Employee"; 
-  const userId = parseInt(localStorage.getItem("user_id")) || 1;
+  // const userId = parseInt(localStorage.getItem("user_id")) || 1;
 
   //Fetch all tasks
   const fetchTasks = async () => {

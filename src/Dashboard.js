@@ -35,8 +35,9 @@ export default function Dashboard({ role: propRole, onLogout }) {
   };
 
   useEffect(() => {
-    fetchTasks();
-  }, []);
+  fetchTasks();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
 
   //  Task counts 
   const totalTasks = tasks.length || 0;
